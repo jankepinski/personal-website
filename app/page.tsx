@@ -1,113 +1,79 @@
-import Image from "next/image";
+import { SocialIcon } from "react-social-icons";
+import "./animations.css";
+import { FeedbackCarousel } from "./components/organisms/feedback-carousel/feedback-carousel";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <div className="lg:mx-40 md:mx-10 sm:mx-5">
+      <div className="inline-block">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-neutral-200 mt-24 typewriter select-none">
+          Hello, I&apos;m Jan
+        </h1>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-neutral-600 mt-1 fade-in-animation select-none">
+        a fullstack developer
+      </h1>
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-neutral-800 mt-1 fade-in-animation select-none">
+        with a great passion
+      </h1>
+      <p className="text-xl text-neutral-400 mt-16">
+        I&apos;m a dedicated fullstack developer with over a year of
+        professional experience, specializing in React, Next.js and Nest.js. My
+        expertise lies in translating designs into pixel-perfect code while
+        ensuring optimal performance and adhering to the latest technology
+        trends.
+      </p>
+      <p className="text-xl text-neutral-400 mt-8">
+        My journey into tech began with game development in Unity before
+        discovering my passion for web development. What excites me most is
+        creating software that enhances people&apos;s lives and seeing it in
+        action. I thrive in collaborative environments, bringing a
+        detail-oriented and innovative approach to every project.
+      </p>
+      <div className="mt-8 flex justify-start gap-6">
+        <SocialIcon
+          href="https://twitter.com/kepinski_dev"
+          target="_blank"
+          network="twitter"
+          bgColor="transparent"
+          fgColor="#aaa"
+        />
+        <SocialIcon
+          href="https://github.com/jankepinski"
+          target="_blank"
+          style={{ cursor: "pointer" }}
+          network="github"
+          bgColor="transparent"
+          fgColor="#aaa"
+        />
+        <SocialIcon
+          href="https://www.linkedin.com/in/jan-k%C4%99pi%C5%84ski-17607128a/"
+          target="_blank"
+          style={{ cursor: "pointer" }}
+          network="linkedin"
+          bgColor="transparent"
+          fgColor="#aaa"
         />
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="w-full border mt-8 rounded-full" />
+      <p className="text-6xl tracking-tighter font-extrabold text-center mt-16 md:hidden">
+        Feedback
+      </p>
+      <div className="flex w-full justify-evenly mt-16 md:mt-32 pb-16 md:pb-48 items-center">
+        <div className="text-6xl font-extrabold tracking-tighter hidden md:block select-none">
+          <p className="text-neutral-900 my-1">Feedback</p>
+          <p className="text-neutral-700 my-1">Feedback</p>
+          <p className="text-neutral-600 my-1">Feedback</p>
+          <p className="text-neutral-500 my-1">Feedback</p>
+          <p className="text-neutral-400 my-1">Feedback</p>
+          <p className="text-neutral-200 my-1">Feedback</p>
+        </div>
+        <FeedbackCarousel />
       </div>
-    </main>
+      <div className="w-full border mt-8 rounded-full" />
+      <p className="text-neutral-700 mt-2 pb-8 text-right">
+        @2024 kepinski.dev
+      </p>
+    </div>
   );
 }
